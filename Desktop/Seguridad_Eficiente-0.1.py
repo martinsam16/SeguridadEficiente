@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 clasificador_ojo=cv2.CascadeClassifier('Haarcascade/haarcascade_eye.xml')
 clasificador_rostro=cv2.CascadeClassifier('Haarcascade/haarcascade_frontalface_alt.xml')
