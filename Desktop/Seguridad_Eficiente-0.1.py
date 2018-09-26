@@ -18,9 +18,18 @@ while(True):#Bucle infinito
                 cv2.rectangle(frame,(x,y),(x+w,y+h),(300,255,0),5)
                 cv2.putText(frame, 'Martin Alexis', (x - 10, y - 10), cv2.FONT_HERSHEY_PLAIN,1,(300, 255, 0))
  
-        cortar = imagen[70:170, 440:540]
-        cv2.imshow("Cortar", cortar)
+        #Intentando recortar rostro ----------------
 
+        """cortar = imagen[70:170, 440:540]
+        cv2.imshow("Cortar", cortar)"""
+
+        """
+        tamano=4
+        redimensionar = cv2.resize(imagen, (int(imagen.shape[1] / tamano), int(imagen.shape[0] / tamano)))
+        recortado = clasificador_rostro.detectMultiScale(redimensionar)
+        recortado = sorted(recortado, key=lambda x: x[3])
+        """
+        #---------------------------------------------
         cv2.imshow('Seguridad Eficiente', frame) #Crear ventana con: (nombre de la ventana, objeto a mostrar)
 
         if cv2.waitKey(1) & 0xFF == ord('g'):#Esperar que una tecla se presione y que esta sea la 'g'
