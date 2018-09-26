@@ -19,5 +19,5 @@ while(True):
         cv2.imshow('Seguridad Eficiente', frame) #Crear ventana con: (nombre de la ventana, objeto a mostrar)
         if cv2.waitKey(1) & 0xFF == ord('s'):#Esperar que una tecla se presione y que esta sea la 's'
                 break#Saltar bucle
-capturar.release()
-destroyWindow('Seguridad Eficiente')
+capturar.release()#Liberando recursos
+cv2.destroyWindow('Seguridad Eficiente')
