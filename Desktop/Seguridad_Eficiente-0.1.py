@@ -13,14 +13,17 @@ while(True):#Bucle infinito
         ojos = clasificador_ojo.detectMultiScale(imagen, 1.3, 5)
         rostro = clasificador_rostro.detectMultiScale(imagen, 1.3, 5)
         for (x,y,w,h) in ojos:
-                cv2.rectangle(frame,(x,y),(x+w,y+h),(300,255,0),3)
+                cv2.rectangle(frame,(x,y),(x+w,y+h),(300,255,0),3) #(x1,y1)
         for (x,y,w,h) in rostro:
                 cv2.rectangle(frame,(x,y),(x+w,y+h),(300,255,0),5)
+
         cv2.imshow('Seguridad Eficiente', frame) #Crear ventana con: (nombre de la ventana, objeto a mostrar)
+
         if cv2.waitKey(1) & 0xFF == ord('g'):#Esperar que una tecla se presione y que esta sea la 'g'
                 cv2.imwrite('img/foto.png',imagen)#Escribir o guardar imagen (poner nombre y la extensión, imagen)
         elif cv2.waitKey(1) & 0xFF == ord('s'):#Esperar que una tecla se presione y que esta sea la 's'
                 break#Saltar bucle
+
 capturar.release()#Liberando recursos
 cv2.destroyWindow('Seguridad Eficiente')
 #cv2.destroyAllWindows()#Cerrar todas las ventanas creadas
