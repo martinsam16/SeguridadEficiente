@@ -23,7 +23,7 @@ while(True):#Bucle infinito
         cv2.imshow('Seguridad Eficiente', frame) #Crear ventana con: (nombre de la ventana, objeto a mostrar)
 
         if cv2.waitKey(1) & 0xFF == ord('g'):#Esperar que una tecla se presione y que esta sea la 'g'
-                cv2.imwrite('img/foto.png',imagen)#Escribir o guardar imagen (poner nombre y la extensión, imagen)
+                cv2.imwrite('img/captura.png',imagen)#Escribir o guardar imagen (poner nombre y la extensión, imagen)
         elif cv2.waitKey(1) & 0xFF == ord('s'):#Esperar que una tecla se presione y que esta sea la 's'
                 break#Saltar bucle
 
