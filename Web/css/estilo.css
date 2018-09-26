@@ -1,0 +1,40 @@
+	body{
+		background-color: #4b6584;
+	}
+	img{
+		width: 25%;
+		height: 25%;
+		max-width: 50px;
+		max-height: 50px;
+	}
+
+	video,canvas{
+		display: inline-block;
+		border-radius: 8px;
+		position: absolute;
+		margin-left: 30%;
+	}
+
+	.capturar{
+
+		width: 46%;
+		height: 25%;
+		color: #fff;
+		background: #2c3e50;
+		display: inline-block;
+		font-size: 50px;
+		margin: 8px;
+		padding: 10px 0px;
+		text-align: center;
+
+		text-decoration: none;
+	}
+	.capturar.radio{
+		border-radius: 8px;
+	}
+
+	.capturar:hover{
+		box-shadow: 0px 0px 0px;
+		color: black;
+		background: white;
+	}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<title>Seguridad Eficiente - Home</title>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js" =""></script>
+	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="icon" href="ico/logo.ico">
+	<script src="librerias/build/tracking.js"></script>
+  <script src="librerias/build/data/face-min.js"></script>
+  <script src="librerias/src/alignment/training/Landmarks.js"></script>
+  <script src="librerias/src/alignment/training/Regressor.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+</head>
+
+<body>
+
+	<!--<center><h1><font face="Comic Sans MS,arial,verdana" color="white">SEGURIDAD EFICIENTE</h1></font></center>-->
+
+	<figure>
+	<a id="camara" class="capturar radio">
+		<span class="fa fa-camera" ></span>
+	</a>
+	<a href="stream.html" class="capturar radio">
+		<span class="fa fa-video"></span>
+	</a>
+	<a href="index.html" class="capturar radio">
+		<span class="fa fas fa-lock"></span>
+		<!--<span class="fa fas fa-lock-open"></span>-->
+	</a>
+	</figure>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+	<video id="grabar" controls autoplay></video>
+    <!--<script src="js/dios.js"></script>-->
+    <div class="demo-frame">
+    <div class="demo-container">
+      <video id="video" width="320" height="240" preload autoplay loop muted></video>
+      <canvas id="canvas" width="320" height="240"></canvas>
+    </div>
+  </div>
+  <script src="js/dios_new.js"></script>
+	<section id="contenedor"></section>
+	<php src="php/enviar.php"></php>
+
+
+</body>
+
+</html>
