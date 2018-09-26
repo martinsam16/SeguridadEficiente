@@ -13,9 +13,12 @@ while(True):#Bucle infinito
         ojos = clasificador_ojo.detectMultiScale(imagen, 1.3, 5)
         rostro = clasificador_rostro.detectMultiScale(imagen, 1.3, 5)
         for (x,y,w,h) in ojos:
-                cv2.rectangle(frame,(x,y),(x+w,y+h),(300,255,0),3) #(x1,y1)
+                cv2.rectangle(frame,(x,y),(x+w,y+h),(300,255,0),3) #(x1,y1) - vertices del cuadro
         for (x,y,w,h) in rostro:
                 cv2.rectangle(frame,(x,y),(x+w,y+h),(300,255,0),5)
+ 
+        cortar = imagen[70:170, 440:540]
+        cv2.imshow("Cortar", cortar)
 
         cv2.imshow('Seguridad Eficiente', frame) #Crear ventana con: (nombre de la ventana, objeto a mostrar)
 
@@ -25,5 +28,5 @@ while(True):#Bucle infinito
                 break#Saltar bucle
 
 capturar.release()#Liberando recursos
-cv2.destroyWindow('Seguridad Eficiente')
-#cv2.destroyAllWindows()#Cerrar todas las ventanas creadas
+#cv2.destroyWindow('Seguridad Eficiente')
+cv2.destroyAllWindows()#Cerrar todas las ventanas creadas
