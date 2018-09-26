@@ -2,7 +2,7 @@
 import cv2#Visión Artificial
 import numpy as np #Procesamiento con matrices
 
-#Importando Cascades
+#Importando Archivos clasificadores
 clasificador_ojo=cv2.CascadeClassifier('Haarcascade/haarcascade_eye.xml')
 clasificador_rostro=cv2.CascadeClassifier('Haarcascade/haarcascade_frontalface_alt.xml')
 capturar=cv2.VideoCapture(0) #Iniciar captura de video, donde (n) es el número de cámara escogida
@@ -16,6 +16,7 @@ while(True):#Bucle infinito
                 cv2.rectangle(frame,(x,y),(x+w,y+h),(300,255,0),3) #(x1,y1) - vertices del cuadro
         for (x,y,w,h) in rostro:
                 cv2.rectangle(frame,(x,y),(x+w,y+h),(300,255,0),5)
+                cv2.putText(frame, 'Martín Alexis', (x - 10, y - 10), cv2.FONT_HERSHEY_PLAIN,1,(0, 255, 0))
  
         cortar = imagen[70:170, 440:540]
         cv2.imshow("Cortar", cortar)
