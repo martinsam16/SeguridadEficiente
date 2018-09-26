@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 #import matplotlib.pyplot as plt#
-
+#ads
 clasificador_ojo=cv2.CascadeClassifier('Haarcascade/haarcascade_eye.xml')
 clasificador_rostro=cv2.CascadeClassifier('Haarcascade/haarcascade_frontalface_alt.xml')
 capturar=cv2.VideoCapture(0)
