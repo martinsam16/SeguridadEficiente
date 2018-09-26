@@ -38,28 +38,6 @@ window.onload = function() {
               context.fillStyle = "#fff";
               context.arc(landmarks[l][0],landmarks[l][1],1,0,2*Math.PI);
               context.fill();
-              /*EXPO
-              //Aprender R -- Diagrama de Correlación
-              //q# Aprender
-              console.log(landmarks[l][0]);
-              matpolib plot(x,y,'°')
-              //studio.azureml
-              //epicalsoft -< YouTube
-              //13.78.146.32:2222 vm
-              //13.78.146.32:9995 Zeppelin
-              //127.0.01:8080 //Ambari
-              //WordCount.java <- buscar
-              //Spark2 = hadoop 2.0 trabaja en memoria, lenguaje Scala para BigData
-              # -*- coding: cp1252 -*-
-#emgu cv
-# face api
-#lingistica forense ()/.
-#archivos -> tablas caracteríticas -> etiquetas o clases = modelos predictivos
-#hedómetro, quanticotrends.com
-#xamarisession - BD Corpus
-#tay -> No dar insumo basura
-#inputación en celdas vacías
-              */
             }
           });
 
