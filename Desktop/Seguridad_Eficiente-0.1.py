@@ -17,9 +17,9 @@ while(True):#Bucle infinito
         for (x,y,w,h) in rostro:
                 cv2.rectangle(frame,(x,y),(x+w,y+h),(300,255,0),5)
         cv2.imshow('Seguridad Eficiente', frame) #Crear ventana con: (nombre de la ventana, objeto a mostrar)
-        if cv2.waitKey(1) & 0xFF == ord('g'):
-                cv2.imwrite('foto.png',imagen)#Escribir o guardar imagen (poner nombre y la extensión, imagen)
-        if cv2.waitKey(1) & 0xFF == ord('s'):#Esperar que una tecla se presione y que esta sea la 's'
+        if cv2.waitKey(1) & 0xFF == ord('g'):#Esperar que una tecla se presione y que esta sea la 'g'
+                cv2.imwrite('img/foto.png',imagen)#Escribir o guardar imagen (poner nombre y la extensión, imagen)
+        elif cv2.waitKey(1) & 0xFF == ord('s'):#Esperar que una tecla se presione y que esta sea la 's'
                 break#Saltar bucle
 capturar.release()#Liberando recursos
 cv2.destroyWindow('Seguridad Eficiente')
