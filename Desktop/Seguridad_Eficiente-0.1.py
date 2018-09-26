@@ -7,10 +7,6 @@ clasificador_ojo=cv2.CascadeClassifier('Haarcascade/haarcascade_eye.xml')
 clasificador_rostro=cv2.CascadeClassifier('Haarcascade/haarcascade_frontalface_alt.xml')
 capturar=cv2.VideoCapture(0) #Iniciar captura de video, donde (n) es el número de cámara escogida
 
-# Definir el codec y crear el objeto VideoWriter
-fourCC = cv2.VideoWriter_fourcc('M','S','V','C')#4 caracteres con que se identifica cada códec
-out = cv2.VideoWriter('foto.png', fourCC, 25.0, (720, 528))
-
 while(True):#Bucle infinito
         a, frame = capturar.read() #a es un booleano; frame, las imágenes
         imagen=cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)#cambiar colores a escala de grises y guardar en imagen
@@ -22,8 +18,7 @@ while(True):#Bucle infinito
                 cv2.rectangle(frame,(x,y),(x+w,y+h),(300,255,0),5)
         cv2.imshow('Seguridad Eficiente', frame) #Crear ventana con: (nombre de la ventana, objeto a mostrar)
         if cv2.waitKey(1) & 0xFF == ord('g'):
-                out.write(imagen)
-                break
+                cv2.imwrite('foto.png',imagen)#Escribir o guardar imagen (poner nombre y la extensión, imagen)
         if cv2.waitKey(1) & 0xFF == ord('s'):#Esperar que una tecla se presione y que esta sea la 's'
                 break#Saltar bucle
 capturar.release()#Liberando recursos
