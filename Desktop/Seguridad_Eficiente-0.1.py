@@ -16,8 +16,8 @@ while(True):#Bucle infinito
         ojos = clasificador_ojo.detectMultiScale(imagen, 1.3, 5)
         rostro = clasificador_rostro.detectMultiScale(imagen, 1.3, 5)
 
-        for (x,y,w,h) in ojos:
-                cv2.rectangle(frame,(x,y),(x+w,y+h),(300,255,0),3) #(x1,y1) - vertices del cuadro
+        for (x,y,w,h) in ojos:#Vertices del cuadro y coordenadas
+                cv2.rectangle(frame,(x,y),(x+w,y+h),(300,255,0),3)
                 print time.strftime("OJO IDENTIFICADO    - Fecha: %d/%m/%y"+" Hora: %H:%M:%S")
         for (x,y,w,h) in rostro:
                 cortar= imagen[y:y+h, x:x+w]#Cortar coordenadas seleccionadas
