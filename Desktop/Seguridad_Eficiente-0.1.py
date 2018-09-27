@@ -9,7 +9,7 @@ capturar=cv2.VideoCapture(0) #Inicializar cámara (n) es el número de cámara e
 
 while(True):#Bucle infinito
         a, frame = capturar.read()#leo con la camara seleccionada:a es booleano, frame es un cuadro
-        imagen=cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)#cambiar colores a escala de grises y guardar en imagen
+        imagen=cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)#cambiar colores a escala de grises y guardar en variable imagen
         ojos = clasificador_ojo.detectMultiScale(imagen, 1.3, 5)
         rostro = clasificador_rostro.detectMultiScale(imagen, 1.3, 5)
 
@@ -18,7 +18,7 @@ while(True):#Bucle infinito
         for (x,y,w,h) in rostro:
                 cortar= imagen[y:y+h, x:x+w]#Cortar coordenadas seleccionadas
                 cv2.rectangle(frame,(x,y),(x+w,y+h),(300,255,0),5)
-                cv2.putText(frame, 'Nombre', (x - 10, y - 10), cv2.FONT_HERSHEY_PLAIN,1,(300, 255, 0))
+                cv2.putText(frame, 'Nombre', (x - 10, y - 10), cv2.FONT_HERSHEY_PLAIN,1,(300, 255, 0))#Insertar texto
 
         cv2.imshow('Seguridad Eficiente', frame) #Crear ventana con: (nombre de la ventana, objeto a mostrar)
 
