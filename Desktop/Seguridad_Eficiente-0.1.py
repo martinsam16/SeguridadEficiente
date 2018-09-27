@@ -31,5 +31,5 @@ while(True):#Bucle infinito
                 break#Saltar bucle
 
 capturar.release()#Liberando recursos
-#cv2.destroyWindow('Seguridad Eficiente')
+#cv2.destroyWindow('Seguridad Eficiente')#Cerrar la ventana que tiene (este nombre)
 cv2.destroyAllWindows()#Cerrar todas las ventanas creadas
