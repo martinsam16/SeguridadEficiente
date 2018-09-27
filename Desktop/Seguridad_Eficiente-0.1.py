@@ -7,6 +7,8 @@ clasificador_ojo=cv2.CascadeClassifier('Haarcascade/haarcascade_eye.xml')
 clasificador_rostro=cv2.CascadeClassifier('Haarcascade/haarcascade_frontalface_alt.xml')
 capturar=cv2.VideoCapture(0) #Inicializar cámara (n) es el número de cámara escogida
 
+nfoto=0
+NombrePerson='Demo'
 while(True):#Bucle infinito
         a, frame = capturar.read()#leo con la camara seleccionada:a es booleano, frame es un cuadro
         imagen=cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)#cambiar colores a escala de grises y guardar en variable imagen
@@ -18,12 +20,13 @@ while(True):#Bucle infinito
         for (x,y,w,h) in rostro:
                 cortar= imagen[y:y+h, x:x+w]#Cortar coordenadas seleccionadas
                 cv2.rectangle(frame,(x,y),(x+w,y+h),(300,255,0),5)
-                cv2.putText(frame, 'Nombre', (x - 10, y - 10), cv2.FONT_HERSHEY_PLAIN,1,(300, 255, 0))#Insertar texto
+                cv2.putText(frame, NombrePerson, (x - 10, y - 10), cv2.FONT_HERSHEY_PLAIN,1,(300, 255, 0))#Insertar texto
 
         cv2.imshow('Seguridad Eficiente', frame) #Crear ventana con: (nombre de la ventana, objeto a mostrar)
 
         if cv2.waitKey(1) & 0xFF == ord('g'):#Esperar que una tecla se presione y que esta sea la 'g'
-                cv2.imwrite('img/captura.png',cortar)#Escribir o guardar imagen (poner nombre y la extensión, imagen)
+                cv2.imwrite('img/'+NombrePerson+str(nfoto)+'.png',cortar)#Escribir o guardar imagen (poner nombre y la extensión, imagen)
+                nfoto+=1
         elif cv2.waitKey(1) & 0xFF == ord('s'):#Esperar que una tecla se presione y que esta sea la 's'
                 break#Saltar bucle
 
