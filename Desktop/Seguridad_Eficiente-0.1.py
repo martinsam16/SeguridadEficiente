@@ -16,13 +16,15 @@ while(True):#Bucle infinito
         ojos = clasificador_ojo.detectMultiScale(imagen, 1.3, 5)
         rostro = clasificador_rostro.detectMultiScale(imagen, 1.3, 5)
 
+        registro = open('registro.txt','a')// a escribe desde el final, w bora y escribe
+
         for (x,y,w,h) in ojos:#Vertices del cuadro y coordenadas
                 cv2.rectangle(frame,(x,y),(x+w,y+h),(300,255,0),3)
-                print time.strftime("OJO IDENTIFICADO    - Fecha: %d/%m/%y"+" Hora: %H:%M:%S")
+                registro.write(str(time.strftime("OJO IDENTIFICADO    - Fecha: %d/%m/%y"+" Hora: %H:%M:%S"))+'\n')
         for (x,y,w,h) in rostro:
                 cortar= imagen[y:y+h, x:x+w]#Cortar coordenadas seleccionadas
                 cv2.imshow('Rostros', cortar)
-                print time.strftime("ROSTRO IDENTIFICADO - Fecha: %d/%m/%y"+" Hora: %H:%M:%S")
+                registro.write(str(time.strftime("ROSTRO IDENTIFICADO - Fecha: %d/%m/%y"+" Hora: %H:%M:%S"))+'\n')
                 
                 cv2.rectangle(frame,(x,y),(x+w,y+h),(300,255,0),5)
                 cv2.putText(frame, NombrePerson, (x - 10, y - 10), cv2.FONT_HERSHEY_PLAIN,1,(300, 255, 0))#Insertar texto
@@ -36,5 +38,6 @@ while(True):#Bucle infinito
                 break#Saltar bucle
 
 capturar.release()#Liberando recursos
+registro.close()
 #cv2.destroyWindow('Seguridad Eficiente')#Cerrar la ventana que tiene (este nombre)
 cv2.destroyAllWindows()#Cerrar todas las ventanas creadas
