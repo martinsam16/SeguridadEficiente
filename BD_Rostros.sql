@@ -33,8 +33,8 @@ CREATE TABLE IF NOT EXISTS `PROYECTO`.`Usuario` (
   `FechNacUSer` VARCHAR(45) NULL,/* Fecha de nacimiento del usuario del usuario que es gravado o tomado foto*/
   `DirecUser` VARCHAR(45) NULL,/*monbre del usuario que es gravado o tomado foto*/
   `NroCellUser` VARCHAR(9) NULL,/* Celular  del usuario que es gravado o tomado foto*/
-  `GenrUser` VARCHAR(1) NOT NULL,/* Genero  del usuario que es gravado o tomado foto*/
-  `FotoUser` VARCHAR(45) NULL,/* foto del usuario */
+  `GenrUser` boolean NOT NULL,/* Genero  del usuario que es gravado o tomado foto*/
+  `FotoUser` VARCHAR(45) not NULL,/* foto del usuario */
   `PuntoFacialUser` VARCHAR(45) NULL, /*los punto facial */
   constraint idusuario_PK PRIMARY KEY (`idUsuario`)) 
 ENGINE = InnoDB;
