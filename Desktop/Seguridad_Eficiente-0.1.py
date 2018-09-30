@@ -4,7 +4,6 @@ import numpy as np #Procesamiento con matrices
 import time
 #import serial
 
-
 #Importando Archivos clasificadores
 clasificador_ojo=cv2.CascadeClassifier('Haarcascade/haarcascade_eye.xml')
 clasificador_rostro=cv2.CascadeClassifier('Haarcascade/haarcascade_frontalface_alt.xml')
@@ -21,20 +20,16 @@ while(True):#Bucle infinito
         registro = open('registro.txt','a')# a escribe desde el final, w bora y escribe
 
         for (x,y,w,h) in ojos:#Vertices del cuadro y coordenadas
-                #cv2.rectangle(frame,(x,y),(x+w,y+h),(300,255,0),3)
-                print "Ojo   :"+str([x,y])+"#"+str([[x,w],y])+"#"+str([x,[y,w]])+"#"+str([[x,w]+ [y,h]])
+                cv2.rectangle(frame,(x,y),(x+w,y+h),(300,255,0),3)
                 #registro.write(str(time.strftime("OJO IDENTIFICADO    - Fecha: %d/%m/%y"+" Hora: %H:%M:%S"))+'\n')
                 #print str(time.strftime("OJO IDENTIFICADO    - Fecha: %d/%m/%y"+" Hora: %H:%M:%S"))+'\n'
         for (x,y,w,h) in rostro:
+                cv2.rectangle(frame,(x,y),(x+w,y+h),(300,255,0),5)
                 cortar= imagen[y:y+h, x:x+w]#Cortar coordenadas seleccionadas
-                cv2.imshow('Rostros', cortar)
-                #print x+w+y+h
-                
-                #print "Rostro:"+str([x,y])+"#"+str([[x,w],y])+"#"+str([x,[y,w]])+"#"+str([[x,w]+ [y,h]])
-                #print "//////"
+                cv2.imshow('Rostro', cortar)
                 
                 registro.write(time.strftime("ROSTRO IDENTIFICADO    - Fecha: %d/%m/%y"+" Hora: %H:%M:%S")+'\n')                
-                #cv2.rectangle(frame,(x,y),(x+w,y+h),(300,255,0),5)
+                
                 cv2.putText(frame, Nombre, (x-5, y-5), cv2.FONT_HERSHEY_PLAIN,1,(300, 255, 0))#Insertar texto
 
         cv2.imshow('Seguridad Eficiente V-0.0', frame) #Crear ventana con: (nombre de la ventana, objeto a mostrar)
