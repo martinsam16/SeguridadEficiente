@@ -22,6 +22,7 @@ while(True):#Bucle infinito
         ojos = clasificador_ojo.detectMultiScale(imagen, 1.3, 5)
         rostro = clasificador_rostro.detectMultiScale(imagen, 1.3, 5)
 
+#Landmarks
         clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8,8))
         clahe_image = clahe.apply(imagen)
         detections = detector(clahe_image, 1)
