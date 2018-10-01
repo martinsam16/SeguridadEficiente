@@ -1,5 +1,0 @@
-<?php
-
-   $read = $serial->readPort();
-
-?>
