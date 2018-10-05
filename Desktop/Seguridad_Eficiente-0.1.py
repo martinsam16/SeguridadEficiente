@@ -15,7 +15,7 @@ capturar=cv2.VideoCapture(0) #Inicializar cámara (n) es el número de cámara e
 detector= dlib.get_frontal_face_detector()
 predictor = dlib.shape_predictor("Predictors/shape_predictor_68_face_landmarks.dat")
 nfoto=0
-Nombre='Nombre'
+Nombre='Nombre'#Será sustituido por un diccionario Nombres={"Maria":[x,y]}
 while(True):#Bucle infinito
         a, frame = capturar.read()#leo con la camara seleccionada:a es booleano, frame es un cuadro
         imagen=cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)#cambiar colores a escala de grises y guardar en variable imagen
