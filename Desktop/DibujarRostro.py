@@ -2,7 +2,6 @@ import dlib
 import cv2
 import matplotlib.pyplot as plt
 
-#Importando Detector
 detector= dlib.get_frontal_face_detector()
 predictor = dlib.shape_predictor("Predictors/shape_predictor_68_face_landmarks.dat")
 

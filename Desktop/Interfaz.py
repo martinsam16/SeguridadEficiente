@@ -1,13 +1,12 @@
 from Tkinter import *
 import cv2
 
-
 def Ventana(Nombre,nfoto,cortar):
+    ventana=Tk()
     ventana=Frame(height=150,width=400)
     ventana.pack(padx=20,pady=20)
-    boton=Button(ventana, text="Guardar",command=Cerrar(Nombre,nfoto,cortar),font=("Verdana",5),height=6,width=6)
-    boton.pack()
+    boton=Button(ventana, text="Guardar",command=Guardar(Nombre,nfoto,cortar),font=("Verdana",5),height=6,width=6).pack()
     ventana.mainloop()
     
-def Cerrar(Nombre,nfoto,cortar):
+def Guardar(Nombre,nfoto,cortar):
     cv2.imwrite('img/'+Nombre+str(nfoto)+'.png',cortar)
