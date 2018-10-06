@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `PROYECTO`.`user` (
 -- Table `PROYECTO`.`Usuario`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `PROYECTO`.`Usuario` (
-  `idUsuario` INT NOT NULL, /*codigo de usuario*/
+  `idUsuario` INT auto_increment NOT NULL, /*codigo de usuario*/
   `NomUser` VARCHAR(45) NOT NULL, /*nombre del usuario que es gravado o tomado foto*/
   `ApellUser` VARCHAR(45) NOT  NULL,/*Apellido del usuario que es gravado o tomado foto*/
   `DNIUser` VARCHAR(8) NOT NULL,/* DNI  del usuario que es gravado o tomado foto*/
