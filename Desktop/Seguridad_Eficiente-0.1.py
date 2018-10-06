@@ -9,6 +9,7 @@ capturar = cv2.VideoCapture(0)
 
 Nombre = 'Nombre'#Será sustituido por un diccionario Nombres = {"Maria":[x, y]}
 nfoto = 0
+print "Iniciando..."
 while(True):
         a, frame = capturar.read()
         imagen = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
