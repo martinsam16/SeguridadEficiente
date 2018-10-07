@@ -1,8 +1,8 @@
 print "Iniciando..."
 import cv2
 import numpy as np 
-import time
-# import Interfaz
+#import time
+#import Interfaz
 import DibujarRostro
 
 capturar = cv2.VideoCapture(0)
@@ -24,6 +24,7 @@ while(True):
                 cv2.destroyAllWindows()
                 break
         if cv2.waitKey(1) & 0xFF == ord('m'):
+                print "Mostrando..."
                 DibujarRostro.Iniciar(cortar)
         #registro = open('registro.txt', 'a')
         #registro.write(time.strftime("ROSTRO IDENTIFICADO    - Fecha: %d/%m/%y"+" Hora: %H:%M:%S")+'\n')
@@ -34,12 +35,13 @@ while(True):
                 cortar = cv2.resize(np.array(imagen[y:y+h, x:x+w]),(240,240))
                 
         cv2.imshow('Rostro',cortar)
-        cv2.imshow('Seguridad Eficiente V-0.1',frame)              
+        cv2.imshow('Seguridad Eficiente V-0.1',frame)          
         
         """#Guardar
         if cv2.waitKey(1) & 0xFF == ord('g'):
                 #Interfaz.Ventana(Nombre, nfoto, cortar)
                 cv2.imwrite('img/'+Nombre+str(nfoto)+'.png', cortar)
+                print "Guardado."
                 nfoto += 1
         """
 exit()

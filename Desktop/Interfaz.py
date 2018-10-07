@@ -9,4 +9,4 @@ def ventana(Nombre, nfoto, cortar):
     ventana.mainloop()
     
 def Guardar(Nombre, nfoto, cortar):
-    
+    pass
