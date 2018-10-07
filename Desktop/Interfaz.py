@@ -9,4 +9,4 @@ def ventana(Nombre, nfoto, cortar):
     ventana.mainloop()
     
 def Guardar(Nombre, nfoto, cortar):
-    cv2.imwrite('img/'+Nombre+str(nfoto)+'.png', cortar)
+    
