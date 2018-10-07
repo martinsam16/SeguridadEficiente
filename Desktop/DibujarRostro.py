@@ -13,5 +13,5 @@ def Iniciar(imagen, frame):
         shape = predictor(clahe_image, d)
         for i in range(1, 68):
             cv2.circle(frame, (shape.part(i).x, shape.part(i).y), 1, (300, 255, 0), thickness = 1)
-            plt.scatter(shape.part(i).y, shape.part(i).x, )
+            plt.scatter(shape.part(i).y, shape.part(i).x)
     plt.show()

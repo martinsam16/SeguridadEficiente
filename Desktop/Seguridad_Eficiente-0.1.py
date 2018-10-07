@@ -12,8 +12,8 @@ nfoto = 0
 print "Iniciando..."
 while(True):
         a, frame = capturar.read()
-        imagen = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-        rostro = ClasificadorRostro.detectMultiScale(imagen, 1.3, 5)
+        imagen = np.array(cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY))
+        rostro = np.array(ClasificadorRostro.detectMultiScale(imagen, 1.3, 5))
 
         #registro = open('registro.txt', 'a')
    
@@ -24,10 +24,10 @@ while(True):
                 cv2.rectangle(frame, (x, y), (x+w, y+h), (300, 255, 0), 1)
                 cv2.putText(frame, Nombre, (x-5, y-5), cv2.FONT_HERSHEY_PLAIN, 1, (300, 255, 0))
 
-                cortar = imagen[y:y+h, x:x+w]
+                cortar = np.array(imagen[y:y+h, x:x+w])
                 cv2.imshow('Rostro', cortar)
 
-                print(time.strftime("ROSTRO IDENTIFICADO    - Fecha: %d/%m/%y"+" Hora: %H:%M:%S")+'\n')
+                #print(time.strftime("ROSTRO IDENTIFICADO    - Fecha: %d/%m/%y"+" Hora: %H:%M:%S")+'\n')
                 #registro.write(time.strftime("ROSTRO IDENTIFICADO    - Fecha: %d/%m/%y"+" Hora: %H:%M:%S")+'\n') 
 
 
