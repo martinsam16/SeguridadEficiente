@@ -1,5 +1,4 @@
-from Tkinter import *
-import cv2
+from Tkinter import *, cv2
 
 def ventana(Nombre, nfoto, cortar):
     ventana = Tk()
