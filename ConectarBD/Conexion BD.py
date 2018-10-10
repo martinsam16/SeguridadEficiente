@@ -5,7 +5,7 @@ def Conectar ():
     server = '127.0.0.1' 
     database = 'Seguridad_Eficiente' 
     username = 'root' 
-    password = 'tucontraseña' 
+    password = 'Contraseña' 
     cnn = pypyodbc.connect('DRIVER={ODBC Driver  for MySQL};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
     print("Conexion establecida con exito")
 def agregar ():
