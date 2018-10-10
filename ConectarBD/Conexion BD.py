@@ -6,7 +6,7 @@ def Conectar ():
     database = 'Seguridad_Eficiente' 
     username = 'root' 
     password = 'tucontraseña' 
-    cnn = pypyodbc.connect('DRIVER={ODBC Driver 17 for MySQL};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
+    cnn = pypyodbc.connect('DRIVER={ODBC Driver  for MySQL};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
     print("Conexion establecida con exito")
 def agregar ():
     CantidadUsuario=int(input("Cuantos Usuarios va a ingresar:"))
