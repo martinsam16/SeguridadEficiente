@@ -32,7 +32,7 @@ while(True):
                 cv2.rectangle(frame, (x, y), (x+w, y+h), (300, 255, 0))
                 cv2.putText(frame, Nombre, (x-5, y-5), cv2.FONT_HERSHEY_PLAIN, 1, (300, 255, 0))
                 cortar = np.array(imagen[y:y+h, x:x+w])
-        cortar=cv2.resize(cortar,(140,140))
+        cortar=np.array(cv2.resize(cortar,(140,140)))
 
         cv2.imshow('Rostro',cortar)
         cv2.imshow('Seguridad Eficiente V-0.1',cv2.resize(frame,(400,300)))
