@@ -1,39 +1,39 @@
-import  mysql.connector
+import  MySQLdb
 def Conectar ():
-    global cnn
+    global conn
     global cursor
-    server = '127.0.0.1' 
+    server = 'localhost' 
     database = 'Seguridad_Eficiente' 
     username = 'root' 
-    password = 'Contraseña' 
-    cnn = pypyodbc.connect('DRIVER={ODBC Driver  for MySQL};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
+    password = 'root' 
+    conn = MySQLdb.connect('DRIVER={ODBC Driver  for MySQL server};SERVER='+localhost+';DATABASE='+Seguridad_Eficiente+';UID='+root+';PWD='+ root)
     print("Conexion establecida con exito")
 def agregar ():
-    CantidadUsuario=int(input("Cuantos Usuarios va a ingresar:"))
+    CantidadUsuario=int(raw_input("Cuantos Usuarios va a ingresar:"))
     x=0
-    while x< CantidadAlumnos:
-        ID = input("INT AUTO_INCREMENT ")
-        Nombre = input("Ingrese el nombre del usuario: ")
-        Apellido = input("Ingrese el apellido del usuario: ")
-        DNI= input("Ingrese el DNI del alumno: ")
-        FechadeNacimiento = input("Ingrese Fecha de Nacimiento del Usuario : ")
-        Direccion = input("Ingrese Direccion del Usuario : ")
-        Numerodecelular = input("Ingrese Numero de celular el Usuario : ")
-        Genero = input("Ingrese Genero del Usuario : ")
-        Foto = input("Ingrese la  Foto de la Usuario : ")
-        PuntosFaciales  = input("Ingrese Puntos Faciales del aUsuario : ")
+    while x< CantidadUsuario:
+        ID = int(raw_input("Ingrese el ID de Usuario: "))
+        Nombre = raw_input("Ingrese el nombre del usuario: ")
+        Apellido = raw_input("Ingrese el apellido del usuario: ")
+        DNI= int(raw_input("Ingrese el DNI del alumno: "))
+        FechadeNacimiento = (raw_input("Ingrese Fecha de Nacimiento del Usuario : "))
+        Direccion = raw_input("Ingrese Direccion del Usuario : ")
+        Numerodecelular = int(raw_input("Ingrese Numero de celular el Usuario : "))
+        Genero = raw_input("Ingrese Genero del Usuario : ")
+        Foto = raw_input("Ingrese la  Foto de la Usuario : ")
+        PuntosFaciales  = raw_input("Ingrese Puntos Faciales del Usuario : ")
         cursor = cnn.cursor()
-        sqlcmd = ("INSERT INTO Usuarios (ID,Nombre,Apellido,DNI,FechadeNacimiento,Direccion,Numerodecelular,Genero,Foto,PuntosFaciales)"
+        sql = ("INSERT INTO Usuarios (ID,Nombre,Apellido,DNI,FechadeNacimiento,Direccion,Numerodecelular,Genero,Foto,PuntosFaciales)"
                   "VALUES ('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s')"%\
                  (ID,Nombre,Apellido,DNI,FechadeNacimiento,Direccion,Numerodecelular,Genero,Foto,PuntosFaciales ))
         x = x + 1
-        cursor.execute(sqlcmd)
-        cnn.commit()
+        cursor.execute(sql)
+        conn.commit()
         print("Registro insertado correctamente")
 def buscar ():
-    cursor = cnn.cursor()
-    ID =int(input("Ingrese el IDUSUARIO: "))
-    ConsultaID = "SELECT * FROM Usuarios WHERE ID="+ str(ID)
+    cursor = conn.cursor()
+    ID =int(raw_input("Ingrese el ID Usuario: "))
+    ConsultaID = "SELECT * FROM Usuario WHERE ID="+ str(ID)
     cursor.execute(ConsultaID)
     DatoID= cursor.fetchall()
     for x in range (1):
@@ -54,7 +54,7 @@ def menu():
     print ("""\t\t\t1. Conectar la Base De datos\n
                \t\t2. Agregar datos a la tabla\n
                \t\t3. Buscar datos de la base de datos""")
-    op = input("Ingrese la opcion que desea realizar  del 1 al 3: ")
+    op = raw_input("Ingrese la opcion que desea realizar  del 1 al 3: ")
     if op == "1":
         Conectar ()
         menu()
@@ -66,5 +66,5 @@ def menu():
         menu()
         
 menu()
-  
-  
+ 
+
