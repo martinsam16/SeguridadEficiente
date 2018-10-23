@@ -1,5 +1,3 @@
 show DATABASES;
-create database if not exists Demo;
-use Demo;
-drop database Demo;
-show tables;
+create database if not exists Seguridad_Eficiente;
+use Seguridad_Eficiente;
