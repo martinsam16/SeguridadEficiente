@@ -4,7 +4,6 @@ import cv2, numpy as np, pickle
 
 ClasificadorRostro = cv2.CascadeClassifier('Haarcascade/haarcascade_frontalface_alt.xml')
 
-
 recognizer=cv2.face.LBPHFaceRecognizer_create()
 recognizer.read("recognizer/face-trainner.yml")
 
@@ -12,26 +11,29 @@ labels={"person_name":1}
 with open("pickle/face-labels.pickle",'rb') as f:
         og_labels = pickle.load(f)
         labels = {v:k for k,v in og_labels.items()}
+        
 capturar = cv2.VideoCapture(0)
-roi_gray=cv2.imread('img/martin/martin0.jpg')
+cortar=cv2.imread('img/martin/martin0.jpg')
 	
 #txt = open('txt/nFoto.txt', 'r')
 nfoto=0
 #txt.close()
 
 while(True):
-        ret, frame = capturar.read()
-        gray  = np.array(cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY))
-        rostro = np.array(ClasificadorRostro.detectMultiScale(gray, scaleFactor=1.5, minNeighbors=5))
-        
+        booleano, frame = capturar.read()
+        frameBN  = np.array(cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY))
+        rostro = np.array(ClasificadorRostro.detectMultiScale(frameBN, scaleFactor=1.5, minNeighbors=5))
+
         #registro = open('txt/registro.txt', 'a')
         #registro.write(time.strftime("ROSTRO IDENTIFICADO    - Fecha: %d/%m/%y"+" Hora: %H:%M:%S")+'\n')
         for (x, y, w, h) in rostro:
-                roi_gray=np.array(gray[y:y+h, x:x+w])
-                cv2.imshow('Rostro',cv2.resize(roi_gray,(120,120),dst=None))
-                roi_color=np.array(frame[y:y+h, x:x+w])
-                id_, conf = recognizer.predict(np.array(gray))
-                if conf>=8 and conf <= 85:
+
+                cortar=np.array(frameBN[y:y+h, x:x+w])
+                cv2.imshow('Rostro',cv2.resize(cortar,(120,120),dst=None))
+
+                id_, conf = recognizer.predict(np.array(cortar))
+                print(conf)
+                if conf>=8 and conf <= 100:
                         cv2.putText(frame, labels[id_], (x,y), cv2.FONT_HERSHEY_PLAIN, 3, (500, 600, 10), 2, cv2.LINE_AA)
                         cv2.rectangle(frame, (x, y), (x + w,  y + h), (500, 600, 10), 1)
                 else:
@@ -40,6 +42,13 @@ while(True):
                         print ("ALERTA")
         
         cv2.imshow('Seguridad Eficiente V-0.1',cv2.resize(frame,(500,400),dst=None))
+
+        if cv2.waitKey(20) & 0xFF == ord('g'):
+                print ("Guardando...")
+                cv2.imwrite('img/nombre/nombre'+str(nfoto)+'.jpg',cortar)
+                print ("Guardado.")
+                nfoto +=1
+
         if cv2.waitKey(20) & 0xFF == ord('s'):
                 print ("Saliendo ..")
                 #txt = open('txt/nFoto.txt', 'w')
@@ -55,9 +64,4 @@ while(True):
           #      DibujarRostro.Iniciar(cortar)
            #     print ("Mostrado")
 
-        if cv2.waitKey(20) & 0xFF == ord('g'):
-                print ("Guardando...")
-                cv2.imwrite('img/martin/martin'+str(nfoto)+'.jpg',roi_gray)
-                print ("Guardado.")
-                nfoto +=1
 exit()
