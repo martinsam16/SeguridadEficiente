@@ -28,15 +28,18 @@ while(True):
         #registro.write(time.strftime("ROSTRO IDENTIFICADO    - Fecha: %d/%m/%y"+" Hora: %H:%M:%S")+'\n')
         for (x, y, w, h) in rostro:
                 roi_gray=np.array(gray[y:y+h, x:x+w])
+                cv2.imshow('Rostro',cv2.resize(roi_gray,(120,120),dst=None))
                 roi_color=np.array(frame[y:y+h, x:x+w])
-                id_, conf = recognizer.predict(np.array(roi_gray))
+                id_, conf = recognizer.predict(np.array(gray))
                 if conf>=8 and conf <= 85:
-                        cv2.putText(frame, labels[id_], (x,y), cv2.FONT_HERSHEY_PLAIN, 1, (500, 600, 10), 1, cv2.LINE_AA)
+                        cv2.putText(frame, labels[id_], (x,y), cv2.FONT_HERSHEY_PLAIN, 3, (500, 600, 10), 2, cv2.LINE_AA)
                         cv2.rectangle(frame, (x, y), (x + w,  y + h), (500, 600, 10), 1)
                 else:
-                        cv2.rectangle(frame, (x, y), (x + w,  y + h),(900, 0, 900), 3 )
-        cv2.imshow('Rostro',cv2.resize(roi_gray,(120,120),dst=None))
-        cv2.imshow('Seguridad Eficiente V-0.1',cv2.resize(frame,(500,300),dst=None))
+                        cv2.putText(frame, "Desconocido", (x,y), cv2.FONT_HERSHEY_PLAIN, 1, (900, 0, 900), 1, cv2.LINE_AA)
+                        cv2.rectangle(frame, (x, y), (x + w,  y + h),(900, 0, 900), 1 )
+                        print ("ALERTA")
+        
+        cv2.imshow('Seguridad Eficiente V-0.1',cv2.resize(frame,(500,400),dst=None))
         if cv2.waitKey(20) & 0xFF == ord('s'):
                 print ("Saliendo ..")
                 #txt = open('txt/nFoto.txt', 'w')
@@ -54,7 +57,7 @@ while(True):
 
         if cv2.waitKey(20) & 0xFF == ord('g'):
                 print ("Guardando...")
-                cv2.imwrite('img/james/james'+str(nfoto)+'.jpg',roi_gray)
+                cv2.imwrite('img/martin/martin'+str(nfoto)+'.jpg',roi_gray)
                 print ("Guardado.")
                 nfoto +=1
 exit()
