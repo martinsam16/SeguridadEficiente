@@ -5,35 +5,31 @@ import cv2, numpy as np, pickle
 ClasificadorRostro = cv2.CascadeClassifier('Haarcascade/haarcascade_frontalface_alt.xml')
 
 recognizer=cv2.face.LBPHFaceRecognizer_create()
-recognizer.read("recognizer/face-trainner.yml")
+recognizer.read("entrenamiento/trainner.yml")
 
-labels={"person_name":1}
-with open("pickle/face-labels.pickle",'rb') as f:
+labels={"nombrepersona":1}
+with open("entrenamiento/labels.pickle",'rb') as f:
         og_labels = pickle.load(f)
         labels = {v:k for k,v in og_labels.items()}
         
 capturar = cv2.VideoCapture(0)
-cortar=cv2.imread('img/martin/martin0.jpg')
-	
-#txt = open('txt/nFoto.txt', 'r')
+cortar=[]
+
 nfoto=0
-#txt.close()
 
 while(True):
         booleano, frame = capturar.read()
         frameBN  = np.array(cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY))
         rostro = np.array(ClasificadorRostro.detectMultiScale(frameBN, scaleFactor=1.5, minNeighbors=5))
 
-        #registro = open('txt/registro.txt', 'a')
-        #registro.write(time.strftime("ROSTRO IDENTIFICADO    - Fecha: %d/%m/%y"+" Hora: %H:%M:%S")+'\n')
         for (x, y, w, h) in rostro:
 
                 cortar=np.array(frameBN[y:y+h, x:x+w])
                 cv2.imshow('Rostro',cv2.resize(cortar,(120,120),dst=None))
-
+                
                 id_, conf = recognizer.predict(np.array(cortar))
-                print(conf)
-                if conf>=8 and conf <= 100:
+
+                if conf>=30 and conf <= 100:
                         cv2.putText(frame, labels[id_], (x,y), cv2.FONT_HERSHEY_PLAIN, 3, (500, 600, 10), 2, cv2.LINE_AA)
                         cv2.rectangle(frame, (x, y), (x + w,  y + h), (500, 600, 10), 1)
                 else:
@@ -45,23 +41,14 @@ while(True):
 
         if cv2.waitKey(20) & 0xFF == ord('g'):
                 print ("Guardando...")
-                cv2.imwrite('img/nombre/nombre'+str(nfoto)+'.jpg',cortar)
+                cv2.imwrite('img/martin/martin'+str(nfoto)+'.jpg',cortar)
                 print ("Guardado.")
                 nfoto +=1
 
         if cv2.waitKey(20) & 0xFF == ord('s'):
                 print ("Saliendo ..")
-                #txt = open('txt/nFoto.txt', 'w')
-                #txt.write(str(nfoto))
-                #txt.close()
                 capturar.release()
-                #registro.close()
                 cv2.destroyAllWindows()
                 break
-
-        #if cv2.waitKey(1) & 0xFF == ord('m'):
-         #       print ("Mostrando...")
-          #      DibujarRostro.Iniciar(cortar)
-           #     print ("Mostrado")
 
 exit()

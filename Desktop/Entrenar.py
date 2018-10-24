@@ -1,3 +1,4 @@
+print("Entrenando..")
 import cv2
 import os
 import numpy as np
@@ -25,7 +26,7 @@ for root, dirs, files in os.walk(image_dir):
 				label_ids[label] = current_id
 				current_id += 1
 			id_ = label_ids[label]
-			print(label_ids)
+			#print(label_ids)
 			
 			pil_image = Image.open(path).convert("L")
 			
@@ -38,11 +39,11 @@ for root, dirs, files in os.walk(image_dir):
 				x_train.append(roi)
 				y_labels.append(id_)
 
-with open("pickle/face-labels.pickle", 'wb') as f:
+with open("entrenamiento/labels.pickle", 'wb') as f:
 	pickle.dump(label_ids, f)
 
 recognizer.train(x_train, np.array(y_labels))
-recognizer.save("recognizer/face-trainner.yml")
+recognizer.save("entrenamiento/trainner.yml")
 
 print ("Entrenamiento completado satisfactoriamente!")
 exit()
