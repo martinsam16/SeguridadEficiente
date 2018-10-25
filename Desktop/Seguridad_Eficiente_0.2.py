@@ -1,6 +1,5 @@
 print ("Iniciando...")
 import cv2, numpy as np, pickle
-#DibujarRostro
 
 ClasificadorRostro = cv2.CascadeClassifier('Haarcascade/haarcascade_frontalface_alt.xml')
 
