@@ -40,7 +40,7 @@ while(True):
 
         if cv2.waitKey(20) & 0xFF == ord('g'):
                 print ("Guardando...")
-                cv2.imwrite('img/martin/martin'+str(nfoto)+'.jpg',cortar)
+                cv2.imwrite('img/james/james'+str(nfoto)+'.jpg',cortar)
                 print ("Guardado.")
                 nfoto +=1
 

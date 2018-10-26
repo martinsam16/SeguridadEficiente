@@ -11,6 +11,7 @@ def IngresarDatos():
   
 class IniciarVentana(imagen,nombre):
     root=tkint.Tk()
-    btn=tkint.Button(root,text="Registrar",command=IngresarDatos())
+    btn=tkint.Button(root,text="Registrar",command=IngresarDatos)
     btn.pack()
+    root.title("Principal")
     root.mainloop()
