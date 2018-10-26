@@ -26,7 +26,7 @@ for root, dirs, files in os.walk(image_dir):
 				label_ids[label] = current_id
 				current_id += 1
 			id_ = label_ids[label]
-			#print(label_ids)
+			print(label_ids)
 			
 			pil_image = Image.open(path).convert("L")
 			
@@ -46,4 +46,3 @@ recognizer.train(x_train, np.array(y_labels))
 recognizer.save("entrenamiento/trainner.yml")
 
 print ("Entrenamiento completado satisfactoriamente!")
-exit()
