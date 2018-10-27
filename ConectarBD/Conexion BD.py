@@ -1,13 +1,9 @@
 import mysql.connector
 	
-def Conectar ():
+def Conectar (host,server,username,password):
     global cnn
-    global cursor
-    server = 'localhost' 
-    database = 'Seguridad_Eficiente' 
-    username = 'root' 
-    password = 'root' 
-    cnn = mysql.connector.connect(host="localhost",user="root",passwd="root",db="Seguridad_Eficiente")
+    global cursor 
+    cnn = mysql.connector.connect(host,user,passwd,db="Seguridad_Eficiente")
     print("Conexion establecida con exito")
     
 def agregar ():
