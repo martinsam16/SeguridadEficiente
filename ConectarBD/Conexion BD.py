@@ -1,6 +1,6 @@
 import mysql.connector
 	
-def Conectar (host,server,username,password):
+def Conectar (host,user,passwd):
     global cnn
     global cursor 
     cnn = mysql.connector.connect(host,user,passwd,db="Seguridad_Eficiente")
