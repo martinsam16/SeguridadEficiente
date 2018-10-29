@@ -1,6 +1,6 @@
 print ("Iniciando...")
-import cv2, numpy as np, pickle,re
-
+import cv2, numpy as np, pickle,re,shutil as shu,os
+from tkinter import *
 ClasificadorRostro = cv2.CascadeClassifier('Haarcascade/haarcascade_frontalface_alt.xml')
 
 recognizer=cv2.face.LBPHFaceRecognizer_create()
@@ -14,9 +14,34 @@ with open("entrenamiento/labels.pickle",'rb') as f:
 capturar = cv2.VideoCapture(0)
 cortar=[]
 
-nfoto=0
 nombre="Demo"
 margen=40
+
+"""
+#Funcion para la ventana guardar fotos
+nfoto=0
+def TomarFoto():
+        cv2.imwrite('img/saman/saman'+str(nfoto)+'.jpg',cortar)
+        print ("Guardado.")
+        nfoto +=1
+root = Tk()
+Button(root, text='Capturar', command=TomarFoto).pack()
+root.mainloop()
+"""
+def CrearCarpeta(nombre):
+ os.mkdir("./img/"+nombre)
+ 
+def EliminarCarpeta(nombre):
+  shu.rmtree("./img"+nombre)
+  
+def IngresarDatos():
+        pass
+
+def IniciarVentana(imagen,nombre):
+    root=tkint.Tk()
+    btn=tkint.Button(root,text="Registrar",command=IngresarDatos())
+    btn.pack()
+    root.mainloop()
 
 while(not cv2.waitKey(20) & 0xFF == ord('s')):
         booleano, frame = capturar.read()
@@ -33,20 +58,14 @@ while(not cv2.waitKey(20) & 0xFF == ord('s')):
                 nombre=nombre[0:len(nombre)-4]
                 nombre=re.sub("\d", "", nombre)
                 if conf>=margen :
-                        cv2.putText(frame, nombre , (x,y+10), cv2.FONT_HERSHEY_PLAIN, 2, (500, 600, 10), 1, cv2.LINE_AA)
-                        #cv2.rectangle(frame, (x, y), (x + w,  y + h), (500, 600, 10), 1)
+                        cv2.putText(frame, nombre , (x,y), cv2.FONT_HERSHEY_PLAIN, 2, (500, 600, 10), 1, cv2.LINE_AA)
+                        cv2.rectangle(frame, (x, y), (x + w,  y + h), (500, 600, 10), 1)
                 elif conf<margen:
                         cv2.putText(frame, "INTRUSO", (x,y), cv2.FONT_HERSHEY_PLAIN, 1, (900, 0, 900), 1, cv2.LINE_AA)
                         cv2.rectangle(frame, (x, y), (x + w,  y + h),(900, 0, 900), 1 )
                         print ("ALERTA")
         cv2.imshow('Seguridad Eficiente V_0.2',cv2.resize(frame,(800,600),dst=None))
-
-        if cv2.waitKey(20) & 0xFF == ord('g'):
-                print ("Guardando...")
-                cv2.imwrite('img/saman/saman'+str(nfoto)+'.jpg',cortar)
-                print ("Guardado.")
-                nfoto +=1
-
+        
 capturar.release()
 cv2.destroyAllWindows()
 exit()
