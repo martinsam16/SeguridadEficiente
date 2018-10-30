@@ -1,6 +1,6 @@
 print ("Iniciando...")
-import cv2, numpy as np, pickle,re,shutil as shu,os
-from tkinter import *
+import cv2, numpy as np, pickle,re
+#from tkinter import *
 ClasificadorRostro = cv2.CascadeClassifier('Haarcascade/haarcascade_frontalface_alt.xml')
 
 recognizer=cv2.face.LBPHFaceRecognizer_create()
@@ -16,32 +16,6 @@ cortar=[]
 
 nombre="Demo"
 margen=40
-
-"""
-#Funcion para la ventana guardar fotos
-nfoto=0
-def TomarFoto():
-        cv2.imwrite('img/saman/saman'+str(nfoto)+'.jpg',cortar)
-        print ("Guardado.")
-        nfoto +=1
-root = Tk()
-Button(root, text='Capturar', command=TomarFoto).pack()
-root.mainloop()
-"""
-def CrearCarpeta(nombre):
- os.mkdir("./img/"+nombre)
- 
-def EliminarCarpeta(nombre):
-  shu.rmtree("./img"+nombre)
-  
-def IngresarDatos():
-        pass
-
-def IniciarVentana(imagen,nombre):
-    root=tkint.Tk()
-    btn=tkint.Button(root,text="Registrar",command=IngresarDatos())
-    btn.pack()
-    root.mainloop()
 
 while(not cv2.waitKey(20) & 0xFF == ord('s')):
         booleano, frame = capturar.read()
@@ -69,3 +43,31 @@ while(not cv2.waitKey(20) & 0xFF == ord('s')):
 capturar.release()
 cv2.destroyAllWindows()
 exit()
+
+
+"""
+#Funcion para la ventana guardar fotos
+nfoto=0
+def TomarFoto():
+        cv2.imwrite('img/saman/saman'+str(nfoto)+'.jpg',cortar)
+        print ("Guardado.")
+        nfoto +=1
+root = Tk()
+Button(root, text='Capturar', command=TomarFoto).pack()
+root.mainloop()
+
+def CrearCarpeta(nombre):
+ os.mkdir("./img/"+nombre)
+ 
+def EliminarCarpeta(nombre):
+  shu.rmtree("./img"+nombre)
+  
+def IngresarDatos():
+        pass
+
+def IniciarVentana(imagen,nombre):
+    root=tkint.Tk()
+    btn=tkint.Button(root,text="Registrar",command=IngresarDatos())
+    btn.pack()
+    root.mainloop()
+"""
