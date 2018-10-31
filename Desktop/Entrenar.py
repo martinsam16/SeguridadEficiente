@@ -1,13 +1,7 @@
-import cv2
-import os
-import numpy as np
+import cv2,os,numpy as np,pickle
 from PIL import Image
-import pickle
-
-
 
 def Entrenamiento():
-
 	print("Entrenando ..")	
 	BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 	image_dir = os.path.join(BASE_DIR, "img")

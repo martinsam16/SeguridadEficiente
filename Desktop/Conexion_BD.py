@@ -11,7 +11,6 @@ def Conectar ():
     except Exception as e:
         print (e)
         return False
-        
       
 def agregar (ID,NomUser,ApellUser,DNIUser,FechNacUSer,DirecUser,NroCellUser,GenrUser,FotoUser):
     try:

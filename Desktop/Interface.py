@@ -1,6 +1,6 @@
 #-*- coding:utf-8 -*-
 from tkinter import *
-import Conexion_BD,Entrenar as ent
+import Conexion_BD,Entrenar as ent, Seguridad_Eficiente as seg
 #funciones de procesamiento
 
 #Instancia de la clase Tk
@@ -85,9 +85,11 @@ def Registrar():
 def Entrenar():
         a = ent.Entrenamiento()
         print (a)
+def MostrarSegEfi():
+        seg.IniciarIdentificacion()
 
-boton = Button(ventana, text='Registrar', command=Registrar, width=20).grid(row=12, column=3)
+btnReg = Button(ventana, text='Registrar', command=Registrar, width=20).grid(row=12, column=3)
+btnSeg= Button(ventana, text='Iniciar',command=MostrarSegEfi,width=20).grid(row=12, column=1)
 btnEntrenar= Button(ventana, text='Entrenar', command=Entrenar, width=20).grid(row=12, column=2)
 
-#ejecución de ventana
 ventana.mainloop()
