@@ -5,7 +5,7 @@ import Conexion_BD,Entrenar as ent, Seguridad_Eficiente as seg
 
 #Instancia de la clase Tk
 ventana = Tk()
-ventana.title('REGISTRAR')
+ventana.title('INICIO')
 
 ID=0
 Nombre=""
@@ -81,10 +81,10 @@ def Registrar():
         else:
                 pass
 
-#boton
 def Entrenar():
         a = ent.Entrenamiento()
         print (a)
+
 def MostrarSegEfi():
         seg.IniciarIdentificacion()
 
