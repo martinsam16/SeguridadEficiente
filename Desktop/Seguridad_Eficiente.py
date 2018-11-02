@@ -4,10 +4,10 @@ def IniciarIdentificacion():
         try:
                 nfoto=0
                 ClasificadorRostro = cv2.CascadeClassifier('Haarcascade/haarcascade_frontalface_alt.xml')
-                
+                """
                 fourcc=cv2.VideoWriter_fourcc(*'XVID')
                 video=cv2.VideoWriter('vid/video.avi',fourcc, 10.0, (640,480))
-
+                """
                 recognizer=cv2.face.LBPHFaceRecognizer_create()
                 recognizer.read("entrenamiento/trainner.yml")
 
@@ -20,7 +20,7 @@ def IniciarIdentificacion():
                 cortar=[]
 
                 nombre="Demo"
-                margen=60
+                margen=65
 
                 while(not cv2.waitKey(20) & 0xFF == ord('s')):
                         booleano, frame = capturar.read()
@@ -35,17 +35,18 @@ def IniciarIdentificacion():
                                 nombre=labels[id_]
                                 nombre=nombre[0:len(nombre)-4]
                                 nombre=re.sub("\d", "", nombre)
-                                if conf>=margen :
+                                if conf>margen :
                                         cv2.putText(frame, nombre , (x,y), cv2.FONT_HERSHEY_PLAIN, 2, (500, 600, 10), 1, cv2.LINE_AA)
                                         cv2.rectangle(frame, (x, y), (x + w,  y + h), (500, 600, 10), 1)
-                                elif conf<margen:
+                                else:
                                         nombre="Intruso"
                                         cv2.putText(frame,nombre , (x,y), cv2.FONT_HERSHEY_PLAIN, 2, (900, 0, 900), 1, cv2.LINE_AA)
                                         cv2.rectangle(frame, (x, y), (x + w,  y + h),(900, 0, 900), 1 )
                                         print ("ALERTA")
+                        """
                         if (booleano):
                                 video.write(np.array(frame))
-
+                        """
                         cv2.imshow('Seguridad Eficiente V_0.2',cv2.resize(frame,(800,600),dst=None))
 
                         if (cv2.waitKey(20) & 0xFF == ord('g')):
@@ -53,7 +54,7 @@ def IniciarIdentificacion():
                                 print ("Guardado.")
                                 nfoto +=1 
                 cv2.destroyAllWindows()
-                video.release()
+                #video.release()
                 capturar.release()               
 
         except Exception as e:

@@ -1,7 +1,6 @@
 from flask import Flask, render_template, Response
 import cv2, sys, numpy
 
-
 app = Flask(__name__)
 
 @app.route('/')
@@ -17,16 +16,22 @@ def gen():
 
 def get_frame():
     ramp_frames=100
-    camera=cv2.VideoCapture(0) #this makes a web cam object
+    capturar=cv2.VideoCapture(0) #this makes a web cam object
+    rostro=[]
     i=1
+    ClasificadorRostro = cv2.CascadeClassifier('Haarcascade/haarcascade_frontalface_alt.xml')
     while True:
-        retval, im = camera.read()
-        imgencode=cv2.imencode('.jpg',im)[1]
+        booleano, frame = capturar.read()
+        rostro = numpy.array(ClasificadorRostro.detectMultiScale(frame, scaleFactor=1.5, minNeighbors=5))
+        for (x, y, w, h) in rostro:
+            cv2.rectangle(frame, (x, y), (x + w,  y + h), (500, 600, 10), 1)
+
+        imgencode=cv2.imencode('.jpg',frame)[1]
         stringData=imgencode.tostring()
         yield (b'--frame\r\n'
             b'Content-Type: text/plain\r\n\r\n'+stringData+b'\r\n')
         i+=1
-    del(camera)
+    del(capturar)
 
 @app.route('/calc')
 def calc():

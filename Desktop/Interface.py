@@ -10,10 +10,10 @@ ventana.title('INICIO')
 ID=0
 Nombre=""
 Apellidos=""
-DNI="00000000"
-FechaNaci="2018-10-09"
+DNI=""
+FechaNaci=""
 Direccion=""
-NroCel="5100000000"
+NroCel=""
 genero=""
 Foto="./carpeta//"
 a=""
