@@ -16,7 +16,7 @@ def gen():
 
 def get_frame():
     ramp_frames=100
-    capturar=cv2.VideoCapture(0) #this makes a web cam object
+    capturar=cv2.VideoCapture(0) #Se pondría la ip del cliente y con la del server procesamos y ponemos en red
     rostro=[]
     i=1
     ClasificadorRostro = cv2.CascadeClassifier('Haarcascade/haarcascade_frontalface_alt.xml')
