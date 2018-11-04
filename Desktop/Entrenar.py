@@ -36,10 +36,10 @@ def Entrenamiento():
 					x_train.append(roi)
 					y_labels.append(id_)
 
-	with open("entrenamiento/labels.pickle", 'wb') as f:
+	with open("entrenamiento/etiquetas.pickle", 'wb') as f:
 		pickle.dump(label_ids, f)
 
 	recognizer.train(x_train, np.array(y_labels))
-	recognizer.save("entrenamiento/trainner.yml")
+	recognizer.save("entrenamiento/matrices.yml")
 
 	return ("Entrenamiento completado satisfactoriamente!")

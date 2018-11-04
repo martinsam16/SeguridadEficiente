@@ -9,10 +9,10 @@ def IniciarIdentificacion():
                 video=cv2.VideoWriter('vid/video.avi',fourcc, 10.0, (640,480))
                 """
                 recognizer=cv2.face.LBPHFaceRecognizer_create()
-                recognizer.read("entrenamiento/trainner.yml")
+                recognizer.read("entrenamiento/matrices.yml")
 
                 labels={"nombrepersona":0}
-                with open("entrenamiento/labels.pickle",'rb') as f:
+                with open("entrenamiento/etiquetas.pickle",'rb') as f:
                         og_labels = pickle.load(f)
                         labels = {v:k for k,v in og_labels.items()}
                         
@@ -20,7 +20,7 @@ def IniciarIdentificacion():
                 cortar=[]
 
                 nombre="Demo"
-                margen=65
+                margen=35
 
                 while(not cv2.waitKey(20) & 0xFF == ord('s')):
                         booleano, frame = capturar.read()
@@ -50,7 +50,7 @@ def IniciarIdentificacion():
                         cv2.imshow('Seguridad Eficiente V_0.2',cv2.resize(frame,(800,600),dst=None))
 
                         if (cv2.waitKey(20) & 0xFF == ord('g')):
-                                cv2.imwrite('img/saman/saman'+str(nfoto)+'.jpg',cortar)
+                                cv2.imwrite('img/valencia/valencia'+str(nfoto)+'.jpg',cortar)
                                 print ("Guardado.")
                                 nfoto +=1 
                 cv2.destroyAllWindows()
