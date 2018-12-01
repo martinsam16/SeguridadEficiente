@@ -1,7 +1,6 @@
 #-*- coding:utf-8 -*-
 from tkinter import *
 import Conexion_BD,Entrenar as ent, Seguridad_Eficiente as seg
-#funciones de procesamiento
 
 #Instancia de la clase Tk
 ventana = Tk()
@@ -75,7 +74,7 @@ entrada_Foto .grid(row=9, column=2)
 
 #Funcion del btn que insertará registros en la DB
 def Registrar():
-        Registrar = Conexion_BD.Conectar()
+        Registrar = Conexion_BD.conectar()
         if (Registrar):
                 Conexion_BD.agregar(entrada_ID.get(),entrada_Nombre.get(),entrada_Apellidos.get(),entrada_DNI.get(),entrada_FechaNaci.get(),entrada_Direccion.get(),entrada_NroCel.get(),entrada_genero.get(),entrada_Foto.get())
         else:

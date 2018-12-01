@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="626d654a-d319-4e67-ab12-5d7bee64fce1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Desktop/Interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/Interface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/Seguridad_Eficiente.py" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/Seguridad_Eficiente.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan17.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan19.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan19.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan20.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan20.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan21.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan21.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan22.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan22.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan23.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan23.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan24.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan24.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan25.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan25.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan26.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan26.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan27.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan27.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan28.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan28.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan29.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan29.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan30.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan30.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan31.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan31.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan32.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan32.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan33.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan33.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan34.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan34.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan35.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan35.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan36.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan36.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan37.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan37.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan38.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan38.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan39.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan39.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan40.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan40.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan41.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan41.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan42.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan42.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan43.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan43.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan44.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan44.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan45.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan45.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan46.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan46.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan47.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan47.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan48.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan48.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan49.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan50.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan51.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan52.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan53.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan54.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan55.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/brayan/brayan9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/img/brayan/brayan9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/lenovo/lenovo0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/lenovo/lenovo1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/lenovo/lenovo10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/lenovo/lenovo11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/lenovo/lenovo12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/lenovo/lenovo13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/lenovo/lenovo2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/lenovo/lenovo3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/lenovo/lenovo4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/lenovo/lenovo5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/lenovo/lenovo6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/lenovo/lenovo7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/lenovo/lenovo8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/lenovo/lenovo9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez36.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez37.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez38.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez39.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez40.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez41.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez42.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez43.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez44.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez45.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez46.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez47.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez48.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez49.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez50.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez51.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/ramirez/ramirez9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman100.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman101.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman102.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman103.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman104.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman105.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman106.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman107.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman108.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman109.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman110.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman111.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman112.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman113.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman114.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman115.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman116.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman117.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman118.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman119.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman120.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman121.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman122.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman123.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman124.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman125.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman126.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman127.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman36.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman37.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman38.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman39.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman40.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman41.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman42.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman43.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman44.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman45.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman46.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman47.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman48.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman49.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman50.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman51.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman52.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman53.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman54.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman55.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman56.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman57.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman58.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman59.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman60.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman61.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman62.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman63.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman64.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman65.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman66.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman67.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman68.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman69.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman70.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman71.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman72.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman73.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman74.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman75.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman76.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman77.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman78.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman79.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman80.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman81.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman82.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman83.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman84.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman85.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman86.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman87.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman88.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman89.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman90.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman91.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman92.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman93.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman94.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman95.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman96.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman97.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman98.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/img/saman/saman99.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desktop/vid/video.avi" beforeDir="false" afterPath="$PROJECT_DIR$/Desktop/vid/video.avi" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1912617820">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="29" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="29" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Desktop/Interface.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1060">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="e#22#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Desktop/Entrenar.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-261">
+              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://E:/opencv-face-recognition-python-master/OpenCV-Face-Recognition-Python.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="223" column="22" selection-start-line="223" selection-start-column="22" selection-end-line="223" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/Program Files/Python35/Lib/tkinter/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="122">
+              <caret line="1549" selection-start-line="1549" selection-end-line="1549" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Desktop/Seguridad_Eficiente.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Desktop/Seguridad_Eficiente.py" />
+        <option value="C:/Program Files/Python35/Lib/tkinter/__init__.py" />
+        <option value="$PROJECT_DIR$/Desktop/Entrenar.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="50" />
+    <option name="width" value="1346" />
+    <option name="height" value="698" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Seguridad_EficienteV0.2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Seguridad_EficienteV0.2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Seguridad_EficienteV0.2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Seguridad_EficienteV0.2" type="462c0819:PsiDirectoryNode" />
+              <item name="Desktop" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Interface" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Seguridad_EficienteV0.2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\MARTIN SAMAN\Desktop\ProyectosPython\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Desktop" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Desktop/Interface.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Seguridad_EficienteV0.2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\MARTIN SAMAN\Desktop\ProyectosPython\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Interface" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="626d654a-d319-4e67-ab12-5d7bee64fce1" name="Default Changelist" comment="" />
+      <created>1543441882080</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1543441882080</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="22" width="1040" height="754" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34183672" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32903227" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32903227" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32903227" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32903227" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="R Graphics" order="3" />
+      <window_info anchor="right" id="R Packages" order="4" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://D:/Seguridad_EficienteV0.2/Desktop/Interface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-683" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Desktop/Seguridad_Eficiente.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Desktop/Interface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1060">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#22#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python35/Lib/tkinter/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="1549" selection-start-line="1549" selection-end-line="1549" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/opencv-face-recognition-python-master/OpenCV-Face-Recognition-Python.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="223" column="22" selection-start-line="223" selection-start-column="22" selection-end-line="223" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Desktop/Entrenar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-261">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
