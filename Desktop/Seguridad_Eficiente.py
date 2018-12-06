@@ -1,4 +1,4 @@
-import cv2, numpy as np, pickle, re
+import cv2, numpy as np, pickle, re           
 
 def IniciarIdentificacion():
         try:
@@ -9,6 +9,8 @@ def IniciarIdentificacion():
                 video = cv2.VideoWriter('vid/video.avi', fourcc, 10.0, (640, 480))
                 
                 recognizer = cv2.face.LBPHFaceRecognizer_create()
+                #cv2.face.FisherFaceRecognizer_create()
+                #cv2.face.LBPHFaceRecognizer_create()
                 recognizer.read("entrenamiento/matrices.yml")
 
                 labels = {"nombrepersona":0}
@@ -20,8 +22,8 @@ def IniciarIdentificacion():
                 cortar = []
 
                 nombre = "Demo"
-                margen = 25
-
+                margen = 70
+                
                 while(not cv2.waitKey(20) & 0xFF == ord('s')):
                         booleano, frame = capturar.read()
                         frameBN  = np.array(cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY))
@@ -36,14 +38,15 @@ def IniciarIdentificacion():
                                 nombre = nombre[0:len(nombre)-4]
                                 nombre = re.sub("\d", "", nombre)
                                 if conf > margen :
+
                                         cv2.putText(frame, nombre , (x, y), cv2.FONT_HERSHEY_PLAIN, 2, (500, 600, 10), 1, cv2.LINE_AA)
                                         cv2.rectangle(frame, (x, y), (x + w,  y + h), (500, 600, 10), 1)
-                                        cv2.circle(frame, (x+30, y+30), 5, [500, 600, 10], -1)
                                 else:
-                                        nombre = "Intruso"
-                                        cv2.putText(frame, nombre , (x, y), cv2.FONT_HERSHEY_PLAIN, 2, (900, 0, 900), 1, cv2.LINE_AA)
+                                        #nombre = "Intruso"
+                                        #cv2.putText(frame, nombre , (x, y), cv2.FONT_HERSHEY_PLAIN, 2, (900, 0, 900), 1, cv2.LINE_AA)
                                         cv2.rectangle(frame, (x, y), (x + w,  y + h), (900, 0, 900), 1 )
-                                        print ("ALERTA")
+                                        cv2.circle(frame, (x+30, y+30), 5, [900, 0, 900], -1)
+                                        #print ("ALERTA")
                         
                         if (booleano):
                                 video.write(np.array(frame))
@@ -51,7 +54,7 @@ def IniciarIdentificacion():
                         cv2.imshow('Seguridad Eficiente V_0.2', cv2.resize(frame, (800, 600), dst = None))
 
                         if (cv2.waitKey(20) & 0xFF == ord('g')):
-                                cv2.imwrite('img/quispe/quispe'+str(nfoto)+'.jpg', cortar)
+                                cv2.imwrite('img/martin/martin'+str(nfoto)+'.jpg', cortar)
                                 print ("Guardado.")
                                 nfoto += 1 
                 cv2.destroyAllWindows()
